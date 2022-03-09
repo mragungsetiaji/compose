@@ -1,0 +1,9 @@
+# Redis docker compose file
+version: '3.0'
+services:
+    myredis:
+        image: redis:3.2-alpine
+        #restart: always
+        container_name: redis_single
+        ports:
+            - "127.0.0.1:6379:6379"
